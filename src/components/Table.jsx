@@ -19,12 +19,11 @@ const Table = ({ expenses}) => {
                 </tr>
             </thead>
             <tbody>
-                {
+            {
                     expenses.map((expense)=> (
-                        <tr key={expense.id}>
-                            {expense.name}
-                            <ExpenseItem expense={expense}/> 
-                        </tr>
+                        
+                        <ExpenseItem key={expense.id} expense={expense}/> 
+                        
                     ))
                 }
             </tbody>
