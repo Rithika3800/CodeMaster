@@ -2,15 +2,15 @@ import React from 'react'
 //component import
 import ExpenseItem from './ExpenseItem'
 
-const Table = ({ expenses}) => {
+const Table = ({ expenses }) => {
   return (
     <div>
         <table>
             <thead>
                 <tr>
                     {
-                        ["Name", "Amount", "Date"].map((i, 
-                            index) => (
+                        ["Name", "Amount", "Date", "Budget", ""].map
+                        ((i, index) => (
                             <th key={index}>{i}</th>
 
                         ))
